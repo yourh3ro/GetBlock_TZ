@@ -1,0 +1,4 @@
+---
+vars:
+    soft_limit: "{{ soft_limit }}"
+    hard_limit: "{{ hard_limit }}"

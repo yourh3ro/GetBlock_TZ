@@ -1,0 +1,19 @@
+---
+
+- name: Set soft limit for all users
+  community.general.pam_limits:
+    domain: '*'
+    limit_type: soft
+    limit_item: nofile
+    value: "{{ soft_limit }}"
+  notify: 
+    - reload sysctl
+
+- name: Set hard limit for all users 
+  community.general.pam_limits:
+    domain: '*'
+    limit_type: hard
+    limit_item: nofile
+    value: "{{ hard_limit }}"
+  notify: 
+    - reload sysctl

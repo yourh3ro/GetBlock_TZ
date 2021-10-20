@@ -1,0 +1,7 @@
+---
+
+- name: reload sysctl 
+  sysctl: 
+    name: fs.file-max
+    value: "{{ hard_limit }}"
+    reload: yes

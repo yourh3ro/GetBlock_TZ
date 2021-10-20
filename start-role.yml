@@ -1,0 +1,11 @@
+---
+
+- hosts: test_server
+  become: yes
+  become_method: su
+  become_user: root
+  roles:
+    - role: open-file-limit-up 
+      vars: 
+        soft_limit: "1231231231" 
+        hard_limit: "1231231231"

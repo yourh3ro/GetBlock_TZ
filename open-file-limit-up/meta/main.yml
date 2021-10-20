@@ -1,0 +1,4 @@
+galaxy_info:
+  author: urhero (Matushkin Nikita)
+  description: ansible role to increase the limit of open files in linux (Для задачи №2 Напишите Ansible роль увеличивающую лимит на количество открытых файлов в Linux)
+  min_ansible_version: 2.1
